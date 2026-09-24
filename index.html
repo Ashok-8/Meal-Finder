@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Meal Finder</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-house"></i>
+          MEAL FINDER
+        </a>
+
+        <!-- Hamburger / Menu Button -->
+        <button
+          class="menu-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#categoryMenu"
+          aria-controls="categoryMenu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ================= RIGHT SIDE MENU ================= -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="categoryMenu"
+      aria-labelledby="categoryMenuLabel"
+    >
+      <!-- Menu Header -->
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="categoryMenuLabel">Categories</h5>
+
+        <!-- X Button -->
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Menu Items -->
+
+      <div class="offcanvas-body p-0">
+        <a href="#" class="category-link" id="nav-link"></a>
+
+        <a href="#" class="category-link">Chicken</a>
+
+        <a href="#" class="category-link">Dessert</a>
+
+        <a href="#" class="category-link">Lamb</a>
+
+        <a href="#" class="category-link">Miscellaneous</a>
+
+        <a href="#" class="category-link">Pasta</a>
+
+        <a href="#" class="category-link">Pork</a>
+
+        <a href="#" class="category-link">Seafood</a>
+
+        <a href="#" class="category-link">Side</a>
+
+        <a href="#" class="category-link">Starter</a>
+
+        <a href="#" class="category-link">Vegan</a>
+
+        <a href="#" class="category-link">Vegetarian</a>
+
+        <a href="#" class="category-link">Breakfast</a>
+
+        <a href="#" class="category-link">Goat</a>
+      </div>
+    </div>
+
+   <section>
+    <div class="hero-section">
+        <input type="text" placeholder="  Search recipes here...." class="search-bar">  <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <h1 class="title">What are your favorite cuisines? </h1>
+        <h3 class="des-title">PERSONALIZE YOUR EXPERIENCE</h3>
+        
+    </div>
+   </section>
+   <h1>Categories</h1>
+    <div id="items"></div>
+   <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
